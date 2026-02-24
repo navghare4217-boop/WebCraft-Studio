@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact WebCraft Studio for professional website development. Get a free quote today.">
+<title>Contact Us – WebCraft Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--black:#0d0d0d;--white:#fafafa;--accent:#2563eb;--gray:#6b7280;--light:#f3f4f6;--radius:8px;}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;color:var(--black);background:var(--white);line-height:1.7;}
+a{color:inherit;text-decoration:none;}
+nav{position:fixed;top:0;width:100%;background:rgba(250,250,250,0.95);backdrop-filter:blur(10px);border-bottom:1px solid #e5e7eb;z-index:100;padding:0 5%;}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px;}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;}
+.logo span{color:var(--accent);}
+.nav-links{display:flex;gap:2rem;list-style:none;}
+.nav-links a{font-size:.9rem;font-weight:500;color:var(--gray);transition:color .2s;}
+.nav-links a:hover{color:var(--black);}
+.nav-cta{background:var(--accent);color:#fff!important;padding:.45rem 1.2rem;border-radius:8px;font-weight:500!important;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+.hamburger span{display:block;width:24px;height:2px;background:var(--black);}
+.page-hero{padding:140px 5% 60px;background:linear-gradient(135deg,#fff,#eff6ff);}
+.page-hero-inner{max-width:1100px;margin:0 auto;}
+.section-tag{display:inline-block;background:#dbeafe;color:var(--accent);font-size:.75rem;font-weight:600;padding:.3rem .8rem;border-radius:20px;letter-spacing:.5px;text-transform:uppercase;margin-bottom:.8rem;}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;letter-spacing:-.5px;margin-top:.5rem;}
+.page-hero p{color:var(--gray);margin-top:1rem;max-width:600px;}
+.contact-section{padding:5rem 5%;}
+.contact-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1.6fr;gap:4rem;}
+.contact-info h2{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;margin-bottom:1rem;}
+.contact-info p{color:var(--gray);margin-bottom:2rem;}
+.info-item{display:flex;gap:1rem;align-items:flex-start;margin-bottom:1.5rem;}
+.info-icon{width:40px;height:40px;background:#dbeafe;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
+.info-label{font-weight:600;font-size:.9rem;margin-bottom:.2rem;}
+.info-val{color:var(--gray);font-size:.88rem;}
+.form-card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:2.5rem;}
+.form-card h2{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;margin-bottom:1.5rem;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;}
+.form-group{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1rem;}
+.form-group label{font-size:.85rem;font-weight:500;}
+input,textarea,select{padding:.75rem 1rem;border:1.5px solid #e5e7eb;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:.9rem;outline:none;transition:border .2s;width:100%;}
+input:focus,textarea:focus,select:focus{border-color:var(--accent);}
+textarea{resize:vertical;min-height:120px;}
+.submit-btn{width:100%;padding:1rem;background:var(--accent);color:#fff;border:none;border-radius:8px;font-weight:600;font-size:1rem;cursor:pointer;margin-top:.5rem;transition:background .2s;}
+.submit-btn:hover{background:#1d4ed8;}
+.success-msg{display:none;background:#d1fae5;border:1px solid #6ee7b7;border-radius:8px;padding:1rem;text-align:center;color:#065f46;margin-top:1rem;font-weight:500;}
+footer{background:var(--black);color:#9ca3af;padding:3rem 5% 2rem;}
+.footer-inner{max-width:1100px;margin:0 auto;}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:2rem;}
+.footer-brand .logo{color:#fff;}
+.footer-brand p{margin-top:.8rem;font-size:.85rem;}
+.footer-col h4{color:#fff;font-size:.9rem;font-weight:600;margin-bottom:1rem;}
+.footer-col ul{list-style:none;}
+.footer-col ul li{margin-bottom:.6rem;}
+.footer-col ul a{font-size:.85rem;color:#9ca3af;}
+.footer-bottom{border-top:1px solid #1f2937;padding-top:1.5rem;font-size:.8rem;}
+@media(max-width:768px){.hamburger{display:flex;}.nav-links{display:none;position:absolute;top:64px;left:0;width:100%;background:#fff;flex-direction:column;padding:1rem 5%;gap:1rem;border-bottom:1px solid #e5e7eb;}.nav-links.open{display:flex;}.contact-inner,.footer-top{grid-template-columns:1fr;}.form-row{grid-template-columns:1fr;}.page-hero h1{font-size:2rem;}}
+</style>
+</head>
+<body>
+<nav><div class="nav-inner"><a href="index.html" class="logo">Web<span>Craft</span> Studio</a><ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="contact.html" class="nav-cta">Get a Quote</a></li></ul><div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')"><span></span><span></span><span></span></div></div></nav>
+<section class="page-hero"><div class="page-hero-inner"><span class="section-tag">Contact Us</span><h1>Let's Build Something Great Together</h1><p>Ready to start your project? Fill out the form and we'll get back to you within 24 hours with a free quote.</p></div></section>
+<section class="contact-section"><div class="contact-inner"><div class="contact-info"><h2>Get in Touch</h2><p>We'd love to hear about your project. Reach out through any of these channels or fill in the form.</p><div class="info-item"><div class="info-icon">✉️</div><div><div class="info-label">Email</div><div class="info-val">contact@webcraftstudio.com</div></div></div><div class="info-item"><div class="info-icon">⏱️</div><div><div class="info-label">Response Time</div><div class="info-val">Within 24 hours</div></div></div><div class="info-item"><div class="info-icon">🌍</div><div><div class="info-label">Working With Clients</div><div class="info-val">Worldwide — Remote</div></div></div></div><div class="form-card"><h2>Send Us a Message</h2><form onsubmit="handleSubmit(event)"><div class="form-row"><div class="form-group"><label>First Name</label><input type="text" placeholder="John" required></div><div class="form-group"><label>Last Name</label><input type="text" placeholder="Doe" required></div></div><div class="form-group"><label>Email Address</label><input type="email" placeholder="john@example.com" required></div><div class="form-group"><label>Service Needed</label><select><option>Business Website</option><option>Landing Page</option><option>Blog Site</option><option>Speed Optimization</option><option>Other</option></select></div><div class="form-group"><label>Tell Us About Your Project</label><textarea placeholder="Describe your project, budget, and timeline..." required></textarea></div><button class="submit-btn" type="submit">Send Message →</button><div class="success-msg" id="successMsg">✅ Thank you! We'll get back to you within 24 hours.</div></form></div></div></section>
+<footer><div class="footer-inner"><div class="footer-top"><div class="footer-brand"><div class="logo">Web<span>Craft</span> Studio</div><p>Professional website development for businesses worldwide.</p></div><div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul></div><div class="footer-col"><h4>Services</h4><ul><li><a href="#">Business Websites</a></li><li><a href="#">Landing Pages</a></li><li><a href="#">Blog Sites</a></li></ul></div></div><div class="footer-bottom"><span>© 2025 WebCraft Studio. All rights reserved.</span></div></div></footer>
+<script>function handleSubmit(e){e.preventDefault();document.getElementById('successMsg').style.display='block';e.target.reset();}</script>
+</body></html>
